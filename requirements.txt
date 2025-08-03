@@ -5,7 +5,7 @@ Flask-Login==0.6.3
 Flask-WTF==1.2.1
 WTForms==3.1.2
 python-dotenv==1.1.0
-flask-bootstrap==5.3.0.0
+flask-bootstrap
 flask-ckeditor==0.5.4
 Flask-Gravatar==0.5.0
 flask-paginate==2024.04.12
