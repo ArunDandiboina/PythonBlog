@@ -1,6 +1,6 @@
 from datetime import date
 from flask import Flask, abort, render_template, redirect, url_for, flash, request
-from flask_bootstrap import Bootstrap5 # type: ignore
+from flask_bootstrap import Bootstrap # type: ignore
 from flask_ckeditor import CKEditor # type: ignore
 import hashlib
 from flask_login import UserMixin, login_user, LoginManager, current_user, logout_user # type: ignore
@@ -39,7 +39,7 @@ def send_email(to_email, subject, message):
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 ckeditor = CKEditor(app)
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap(app)
 
 # TODO: Configure Flask-Login
 login_manager = LoginManager(app)
